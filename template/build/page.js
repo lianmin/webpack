@@ -26,8 +26,6 @@ Object.keys(pageConfig.pages).forEach(page => {
   chunks.push(new HtmlWebpackPlugin({
     filename: page + '.html',
     template: entry.template,
-    spmb: entry.spmb,
-    spma: pageConfig.spma,
     title: entry.title,
     inject: true,
     minify: {
