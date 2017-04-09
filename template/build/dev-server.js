@@ -78,6 +78,9 @@ module.exports = app.listen(port, function (err) {
 
   // when env is testing, don't need open it
   if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
+    if (Object.keys(webpackConfig.entry)) {
+      uri += '/' + Object.keys(webpackConfig.entry)[0] + '.html'
+    }
     opn(uri)
   }
 })
