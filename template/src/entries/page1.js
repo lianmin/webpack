@@ -3,7 +3,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import App from '../view/App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import App from '../view/page1'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from '../router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
