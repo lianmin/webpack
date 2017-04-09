@@ -14,7 +14,7 @@ new Vue({
 render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 {{/if_eq}}
 {{#if_eq build "standalone"}}
-template: '<App/>',
+  template: '<App/>',
   components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
